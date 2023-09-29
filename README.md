@@ -2,6 +2,19 @@
 
 The Theater API Service is a Django-based RESTful API for managing plays, performances, actors, and more in the theater service. It offers endpoints for creation, updating and retrieval of theater-related data, as well as user registration and order management.
 
+### Features:
+
+* Creating plays with genres and actors
+* Ability to add an image to plays
+* Creating theatre halls
+* Creating performances with show time, play and theatre hall
+* Filtering plays and performances
+* Managing reservations and tickets
+* Ticket validation based on cargo and seat availability.
+* JWT authentication for users.
+* Documentation is located at: </api/doc/swagger/>, </api/doc/redoc/>
+
+
 ## Installation
 
 1. Clone the repository:
@@ -42,3 +55,11 @@ The Theater API Service is a Django-based RESTful API for managing plays, perfor
 
 ## Schema
 ![db.png](db.png)
+
+
+## Screenshots of the project
+![endpoints.png](endpoints.png)
+
+![swagger1.png](swagger1.png)
+
+![swagger2.png](swagger2.png)

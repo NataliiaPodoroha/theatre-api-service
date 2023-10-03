@@ -15,21 +15,75 @@ The Theater API Service is a Django-based RESTful API for managing plays, perfor
 * Documentation is located at: </api/doc/swagger/>, </api/doc/redoc/>
 
 
-## Installation
+## How to launch locally:
 
 1. Clone the repository:
 
    ```
-   git clone https://github.com/PodorogaNatalia/theatre-api-service
+   git clone https://github.com/PodorogaNatalia/theatre-api-service.git
    ```
+
+2. Navigate to the project directory:
+
+   ```
+   cd theatre-api-service
+   ```
+
+3. Create and activate a virtual environment:
+
+   ```
+   python -m venv venv
+   
+   source venv/bin/activate # For Mac OS/Linux
+   
+   venv\Scripts\activate  # For Windows
+   ```
+
+4. Install the required dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+5. Create .env file and define environmental variables following .env.sample
+
+
+6. Install PostgreSQL and create a data base
+
+
+7. Run the database migrations:
+
+   ```
+   python manage.py migrate
+   ```
+
+8. Run the development server:
+
+   ```
+   python manage.py runserver
+   ```
+   
+
+## How to launch with docker:
+
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/PodorogaNatalia/theatre-api-service.git
+   ```
+   
 2. Create .env file and define environmental variables following .env.sample
 
+
 3. Install Docker on your machine.
+
    
 4. Run command:
+
    ```
    docker-compose up --build
    ```
+   
 5. You should use such localhost for you app: ```127.0.0.1:8000```
 
 
@@ -58,8 +112,9 @@ The Theater API Service is a Django-based RESTful API for managing plays, perfor
 
 
 ## Screenshots of the project
-![endpoints.png](endpoints.png)
 
-![swagger1.png](swagger1.png)
+![Endpoints](endpoints.png)
 
-![swagger2.png](swagger2.png)
+![Swagger1](swagger1.png)
+
+![Swagger2](swagger2.png)
